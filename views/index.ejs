@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Đổi tên ảnh</title>
+</head>
+<body>
+   <h1>Đổi tên ảnh</h1>
+    <form action="/" method="post">
+        <img src="/images/<%= images[0] %>" />
+        <input style="display: none" name="oldName" value=<%= images[0] %> />
+        <input name="newName" value=<%= images[0] %> />
+        <button type="submit">Đổi Tên</button>
+    </form>
+   
+</body>
+</html>
