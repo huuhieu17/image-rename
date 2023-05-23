@@ -28,7 +28,8 @@ router.post("/", async function(req, res) {
   if (!fs.existsSync(imageFile)) {
     return;
   }
-  const targetDir = path.join(exportDir, newName);
+  const extFile = ".png"
+  const targetDir = path.join(exportDir, newName+extFile);
     // console.log({imageFile, targetDir});
   await fs.renameSync(imageFile, targetDir);
   res.redirect("/")
